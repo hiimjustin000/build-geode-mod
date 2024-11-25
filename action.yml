@@ -132,7 +132,7 @@ runs:
       uses: chirag-droid/ccache-action@main
       with:
         variant: ${{ inputs.ccache-variant }}
-        key: cpm-${{ steps.platform.outputs.target_id }}-v1
+        key: ${{ steps.platform.outputs.target_id }}-v1
       if: inputs.ccache-variant != ''
 
     - name: Setup CPM Cache
