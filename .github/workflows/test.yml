@@ -40,6 +40,8 @@ jobs:
           # sdk: nightly
           build-config: RelWithDebInfo
           path: textureldr
+          bindings: geode-sdk/bindings
+          bindings-ref: 35a741b
           combine: true
           target: ${{ matrix.config.target }}
 
