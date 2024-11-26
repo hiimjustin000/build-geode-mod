@@ -42,6 +42,7 @@ jobs:
           path: textureldr
           bindings: geode-sdk/bindings
           bindings-ref: 35a741be3844bdeafec7c2bf6691db66ef726323
+          ccache-variant: ccache
           combine: true
           target: ${{ matrix.config.target }}
 
